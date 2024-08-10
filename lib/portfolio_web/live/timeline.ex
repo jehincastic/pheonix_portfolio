@@ -20,6 +20,8 @@ defmodule PortfolioWeb.Timeline do
       |> assign(theme: theme)
       |> assign(live_reading: live_reading)
       |> assign(live_visitors: live_visitors)
+      |> assign(title: "Timeline ⌛")
+      |> assign(sub_title: "The timeline of my life.")
 
     {:ok, socket}
   end

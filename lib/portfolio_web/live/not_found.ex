@@ -21,6 +21,8 @@ defmodule PortfolioWeb.NotFound do
       |> assign(theme: theme)
       |> assign(live_reading: live_reading)
       |> assign(live_visitors: live_visitors)
+      |> assign(title: "Not Found")
+      |> assign(sub_title: "404 - Not Found")
 
     {:ok, socket}
   end

@@ -21,6 +21,8 @@ defmodule PortfolioWeb.Landing do
       |> assign(theme: theme)
       |> assign(live_reading: live_reading)
       |> assign(live_visitors: live_visitors)
+      |> assign(title: "Hello, I'm Castic 👋")
+      |> assign(sub_title: "I'm a Software Engineer at SenseHawk and currently in Nagercoil, India.")
 
     {:ok, socket}
   end

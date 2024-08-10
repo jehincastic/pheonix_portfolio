@@ -32,6 +32,8 @@ defmodule PortfolioWeb.Portfolio do
       |> assign(live_reading: live_reading)
       |> assign(live_visitors: live_visitors)
       |> assign(projects: @projects)
+      |> assign(title: "Projects 📚")
+      |> assign(sub_title: "A selection of projects I've worked on, during my career as a Software Engineer.")
 
     {:ok, socket}
   end

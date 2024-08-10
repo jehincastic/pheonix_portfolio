@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
     <meta name="robots" content="index,follow">
-    <meta name="description" content="Hello, I'm Castic 👋 - I'm a Software Engineer at SenseHawk and currently in Nagercoil, India.">
+    <meta name="description" content={@title <> " - " <> @sub_title}>
     <meta property="og:title" content={@page_title}>
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jehincastic.dev/">
     <meta property="og:locale" content="en_IN">
     <meta property="og:site_name" content="Castic Jehin | jehincastic.dev">
-    <meta property="og:description" content="Hello, I'm Castic 👋 - I'm a Software Engineer at SenseHawk and currently in Nagercoil, India.">
+    <meta property="og:description" content={@title <> " - " <> @sub_title}>
     <.live_title suffix=" · Castic Jehin">
       <%= assigns[:page_title] || "Portfolio" %>
     </.live_title>
